@@ -1,6 +1,6 @@
 <h4 class="title has-text-primary">Users List</h4>
 <div class="columns is-multiline">
-  <div *ngFor="let card of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]" class="column is-3">
-    <sv-user-card></sv-user-card>
+  <div *ngFor="let user of users" class="column is-3">
+    <sv-user-card [user]="user"></sv-user-card>
   </div>
 </div>
