@@ -8,8 +8,8 @@ export const getRoutes = () => {
 @Component({
   selector: 'sv-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  providers: [{ provide: NavigationService, useValue: { getRoutes } }]
+  styleUrls: ['./app.component.css']
+  // providers: [{ provide: NavigationService, useValue: { getRoutes } }]
 })
 export class AppComponent {
   title = 'services';

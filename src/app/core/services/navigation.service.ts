@@ -11,7 +11,12 @@ export class NavigationService {
     return [
       {
         title: 'Home',
-        link: ['']
+        link: [''],
+        options: { exact: true }
+      },
+      {
+        title: 'Users',
+        link: ['users']
       }
     ];
   }
