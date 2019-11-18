@@ -12,7 +12,7 @@ export class NavComponent implements OnInit {
   @Input()
   routes: INavRoute[] = [];
 
-  constructor(private nav: NavigationService) {}
+  constructor(public nav: NavigationService) {}
 
   ngOnInit() {}
 }
