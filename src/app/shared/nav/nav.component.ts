@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
 import { INavRoute } from 'src/app/core/models/nav-route.interface';
+import { NavigationService } from 'src/app/core/services/navigation.service';
 
 @Component({
   selector: 'sv-nav',
@@ -11,7 +12,7 @@ export class NavComponent implements OnInit {
   @Input()
   routes: INavRoute[] = [];
 
-  constructor() {}
+  constructor(private nav: NavigationService) {}
 
   ngOnInit() {}
 }
