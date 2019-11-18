@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationService } from './core/services/navigation.service';
 
 @Component({
   selector: 'sv-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'services';
+  nav = this.navigationService.getRoutes();
+  constructor(private navigationService: NavigationService) {}
 }

@@ -1,0 +1,13 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      <ng-container *ngFor="let route of routes">
+        <a [routerLinkActiveOptions]="route.options ? route.options : {}" [routerLink]="route.link" routerLinkActive="is-active" class="navbar-item">
+          {{ route.title }}
+        </a>
+      </ng-container>
+    </div>
+
+    <div class="navbar-end"></div>
+  </div>
+</nav>
