@@ -1,1 +1,5 @@
-<p>services works!</p>
+<h3 class="title">Emojies</h3>
+
+<div class="box" *ngFor="let emoji of emojiService.getFullList()">
+    <span class="emoji">{{ emoji }}</span>
+</div>

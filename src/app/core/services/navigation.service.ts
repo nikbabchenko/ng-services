@@ -17,10 +17,6 @@ export class NavigationService {
       {
         title: 'Users',
         link: ['users']
-      },
-      {
-        title: 'Services',
-        link: ['services']
       }
     ];
   }

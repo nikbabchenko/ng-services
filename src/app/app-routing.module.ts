@@ -7,7 +7,8 @@ const routes: Routes = [
     loadChildren: () => import('./users/users.module').then(m => m.UsersModule)
   },
   {
-    path: 'services',
+    path: '',
+    pathMatch: 'full',
     loadChildren: () => import('./service-examples/service-examples.module').then(s => s.ServiceExamplesModule)
   }
 ];
