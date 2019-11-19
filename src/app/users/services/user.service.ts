@@ -1,7 +1,12 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject } from '@angular/core';
+import { API_CONFIG_TOKEN, ApiConfig } from 'src/app/core/config/api.config';
 
 @Injectable()
 export class UsersService {
+  constructor(@Inject(API_CONFIG_TOKEN) private config: ApiConfig) {
+    console.log('--config', this.config);
+  }
+
   getUsers() {
     return [
       {
