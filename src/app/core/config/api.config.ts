@@ -12,4 +12,4 @@ export const API_CONFIG: ApiConfig = {
   baseUrl: 'http://some-prod.url'
 };
 
-export const API_CONFIG_TOKEN = new InjectionToken<ApiConfig>('api-config');
+export const API_CONFIG_TOKEN = new InjectionToken<ApiConfig>('app.config');

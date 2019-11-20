@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: () => import('./users/users.module').then(m => m.UsersModule)
   },
   {
+    path: 'contacts',
+    loadChildren: () => import('./contacts/contacts.module').then(m => m.ContactsModule)
+  },
+  {
     path: '',
     pathMatch: 'full',
     loadChildren: () => import('./service-examples/service-examples.module').then(s => s.ServiceExamplesModule)

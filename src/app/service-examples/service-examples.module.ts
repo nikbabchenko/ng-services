@@ -8,7 +8,7 @@ import { NewEmojiSevice } from './services/new-emoji.service';
 
 @NgModule({
   declarations: [ServicesComponent],
-  providers: [EmojiService],
+  providers: [NewEmojiSevice, { provide: EmojiService, useExisting: NewEmojiSevice }],
   imports: [CommonModule, ServiceExamplesRoutingModule]
 })
 export class ServiceExamplesModule {}

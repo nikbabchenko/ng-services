@@ -17,6 +17,15 @@ export class NavigationService {
       {
         title: 'Users',
         link: ['users']
+      },
+      {
+        title: 'Contacts',
+        link: ['contacts'],
+        options: { exact: true }
+      },
+      {
+        title: 'Contacts Info',
+        link: ['contacts/info']
       }
     ];
   }

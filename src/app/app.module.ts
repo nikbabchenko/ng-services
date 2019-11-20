@@ -5,11 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { API_CONFIG_TOKEN, MOCK_CONFIG, API_CONFIG } from './core/config/api.config';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, SharedModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule, SharedModule],
   providers: [{ provide: API_CONFIG_TOKEN, useValue: environment.production ? API_CONFIG : MOCK_CONFIG }],
   bootstrap: [AppComponent]
 })
